@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:latest
+    container_name: teste2-db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: teste2
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: docker

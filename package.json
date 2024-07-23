@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch src/http/server.ts"
+    "dev": "tsx watch --env-file .env src/http/server.ts"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +12,7 @@
   "packageManager": "pnpm@8.10.5+sha512.9c161f433d85551c58f1b3a10b18cc3df72b5a02d2caee6566cc05b6f20addef947e795d90c39033bf92de55177ead69d87f62a9daadc91e7a2e3b58f49353a0",
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.2.2",
+    "@types/bcryptjs": "^2.4.6",
     "@types/node": "^20.14.11",
     "eslint": "8.56",
     "tsup": "^8.2.2",
@@ -22,8 +23,12 @@
     "@fastify/jwt": "^8.0.1",
     "@fastify/swagger": "^8.14.0",
     "@fastify/swagger-ui": "^4.0.1",
+    "@prisma/client": "5.17.0",
+    "bcryptjs": "^2.4.3",
     "fastify": "^4.28.1",
+    "fastify-plugin": "^4.5.1",
     "fastify-type-provider-zod": "^2.0.0",
-    "prisma": "^5.17.0"
+    "prisma": "^5.17.0",
+    "zod": "^3.23.8"
   }
 }
