@@ -26,7 +26,7 @@ app.register(fastifySwagger, {
     },
     servers: [
       {
-        url: 'http://localhost:3000',
+        url: `http://localhost:${env.PORT}`,
         description: 'Local server',
       },
     ],
